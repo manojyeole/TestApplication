@@ -31,7 +31,10 @@ public class SecondActivity extends AppCompatActivity {
         button2 = findViewById(R.id.button2);
         layout = findViewById(R.id.layout);
 
-        Snackbar.make(layout,"Welcome MEssage",Snackbar.LENGTH_SHORT)
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Snackbar.make(layout,"Welcome MEssage",Snackbar.LENGTH_SHORT)
                         .setAction("Start", new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
@@ -40,6 +43,9 @@ public class SecondActivity extends AppCompatActivity {
                             }
                         })
                         .show();
+            }
+        });
+
 
     }
 
