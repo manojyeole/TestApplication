@@ -31,6 +31,7 @@ public class SecondActivity extends AppCompatActivity {
         button2 = findViewById(R.id.button2);
         layout = findViewById(R.id.layout);
 
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
